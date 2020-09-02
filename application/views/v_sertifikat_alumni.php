@@ -31,7 +31,7 @@
                                             <option>Kelas</option>
                                             <?php
                                             foreach ($kelas as $kelass) { ?>
-                                                <option value="<?= $kelass['id'] ?>"><?= $kelass['judul'] ?></option>
+                                                <option value="<?= $kelass->id ?>"><?= $kelass->judul ?></option>
                                             <?php
                                             }
                                             ?>
@@ -69,9 +69,9 @@
                                             foreach ($pencarian as $pencarians) { ?>
                                                 <tr>
                                                     <td scope="row"><?= $no; ?></td>
-                                                    <td><?= $pencarians['nama']; ?></td>
-                                                    <td><?= $pencarians['no_sertif']; ?></td>
-                                                    <td><?= $pencarians['judul']; ?></td>
+                                                    <td><?= $pencarians->nama; ?></td>
+                                                    <td><?= $pencarians->no_sertif; ?></td>
+                                                    <td><?= $pencarians->judul; ?></td>
                                                 </tr>
                                             <?php
                                                 $no++;
